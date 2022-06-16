@@ -35,7 +35,7 @@ sh: ## Connect to the PHP-FPM container
 
 ## — Testing 🧪
 unit: ## Run phpunit
-	@$(CONTAINER_PHP) php vendor/phpunit/phpunit/phpunit test
+	@$(CONTAINER_PHP) php vendor/phpunit/phpunit/phpunit tests --colors
 
 ## — Composer 🧙
 composer: ## Run composer, pass the parameter "c=" to run a given command, example: make composer c='req symfony/orm-pack'
