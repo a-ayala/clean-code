@@ -5,11 +5,18 @@
             "App\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\": "test"
+        }
+    },
     "authors": [
         {
             "name": "a-ayala",
             "email": "aidanayala.web@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    }
 }
